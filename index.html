@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#142b52">
+
+  <title>Missão: Salvar o Ciberespaço!</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="topo">
+    <div class="logo">
+      ⚖️ MISSÃO MATEMÁTICA
+    </div>
+    <div class="pontuacao">
+      ⭐ Pontos: <span id="pontos">0</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- TELA INICIAL -->
+
+    <section id="telaInicial" class="tela ativa">
+
+      <div class="painel-inicial">
+
+        <div class="icone-principal">⚖️</div>
+
+        <h1>Missão: Salvar o Ciberespaço!</h1>
+
+        <h2>O equilíbrio está em suas mãos!</h2>
+
+        <p>
+          O ciberespaço está em perigo!
+          Para salvar os satélites, você precisa
+          resolver desafios matemáticos e equilibrar
+          as balanças.
+        </p>
+
+        <div class="personagens">
+          🚀 🪐 ⭐ 🛰️
+        </div>
+
+        <button id="botaoIniciar" class="botao principal">
+          INICIAR MISSÃO 🚀
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- TELA DO JOGO -->
+
+    <section id="telaJogo" class="tela">
+
+      <div class="informacoes">
+
+        <div class="fase">
+          <span>FASE</span>
+          <strong id="numeroFase">1</strong>
+        </div>
+
+        <div class="desafio">
+          Desafio
+          <strong id="numeroDesafio">1</strong>
+          de 20
+        </div>
+
+      </div>
+
+
+      <div class="mensagem">
+        <h2 id="tituloDesafio">Vamos equilibrar?</h2>
+        <p id="instrucao">
+          Observe os dois lados da balança.
+        </p>
+      </div>
+
+
+      <!-- BALANÇA -->
+
+      <div class="area-balanca">
+
+        <div class="balanca">
+
+          <div class="suporte-topo"></div>
+
+          <div id="barraBalanca" class="barra">
+
+            <div class="prato esquerda" id="pratoEsquerdo">
+              <div class="pesos" id="pesosEsquerda"></div>
+              <div class="bandeja"></div>
+            </div>
+
+            <div class="prato direita" id="pratoDireito">
+              <div class="pesos" id="pesosDireita"></div>
+              <div class="bandeja"></div>
+            </div>
+
+          </div>
+
+          <div class="coluna"></div>
+          <div class="base"></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- VALORES -->
+
+      <div class="valores">
+
+        <div class="valor lado-esquerdo">
+          <span>LADO ESQUERDO</span>
+          <strong id="valorEsquerdo">0</strong>
+        </div>
+
+        <div class="valor lado-direito">
+          <span>LADO DIREITO</span>
+          <strong id="valorDireito">0</strong>
+        </div>
+
+      </div>
+
+
+      <!-- PESOS DISPONÍVEIS -->
+
+      <div class="area-pesos">
+
+        <h3>Escolha os pesos para equilibrar!</h3>
+
+        <p>
+          Arraste os números para os pratos da balança.
+        </p>
+
+        <div id="pesosDisponiveis" class="pesos-disponiveis">
+        </div>
+
+      </div>
+
+
+      <!-- CONTROLES -->
+
+      <div class="controles">
+
+        <button id="botaoLimpar" class="botao secundario">
+          ↩ Limpar
+        </button>
+
+        <button id="botaoConferir" class="botao principal">
+          ✓ Conferir
+        </button>
+
+      </div>
+
+
+      <div id="feedback" class="feedback">
+        Boa sorte! Você consegue!
+      </div>
+
+    </section>
+
+
+    <!-- TELA FINAL -->
+
+    <section id="telaFinal" class="tela">
+
+      <div class="painel-final">
+
+        <div class="icone-final">🏆</div>
+
+        <h1>MISSÃO CUMPRIDA!</h1>
+
+        <h2>Você salvou o Ciberespaço!</h2>
+
+        <p>
+          Parabéns! Você conseguiu equilibrar
+          as balanças e resolver os desafios matemáticos!
+        </p>
+
+        <div class="resultado">
+          ⭐ Sua pontuação:
+          <strong id="pontuacaoFinal">0</strong>
+        </div>
+
+        <button id="botaoReiniciar" class="botao principal">
+          JOGAR NOVAMENTE 🔄
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Missão Matemática – Aprendendo com equilíbrio! ⚖️</p>
+  </footer>
+
+</body>
+</html>
